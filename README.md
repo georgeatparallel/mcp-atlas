@@ -171,6 +171,11 @@ HARNESS_URL=http://localhost:3002 python run_eval.py --input tasks_part_b.csv --
 - **Scoring** (`services/scoring/`, Python) — LLM-as-judge claim-coverage scoring.
 - **Diagnostics** (`services/diagnostics/`, Python) — failure-mode classification across an 11-mode taxonomy.
 
+For custom web-research tasks, the sandbox also supports an optional hosted
+[Parallel Search MCP connection](services/agent-environment/README.md#optional-parallel-search-mcp)
+for free, keyless search and page fetching. It is disabled by default and is
+separate from the 36 version-pinned benchmark servers.
+
 ## Citation
 
 If you use MCP-Atlas in your research, please cite:
