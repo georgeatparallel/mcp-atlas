@@ -1,6 +1,7 @@
 # Agent Environment
 
-A Docker container with 36 pre-configured Model Context Protocol (MCP) servers for AI agents.
+A Docker container with 36 benchmark Model Context Protocol (MCP) servers for AI agents,
+plus an optional hosted connection for custom tasks.
 
 ## Quick Start
 
@@ -30,7 +31,10 @@ A Docker container with 36 pre-configured Model Context Protocol (MCP) servers f
 
 ## Available MCP Servers
 
-This project includes 36 MCP servers as configured in `src/agent_environment/mcp_server_template.json`. Some require API keys. To see required API keys and notes on how to get them, see `env.template`
+The template in `src/agent_environment/mcp_server_template.json` defines 36 benchmark
+servers plus the optional Parallel Search MCP connection described below. Some
+benchmark servers require API keys. To see required API keys and notes on how to
+get them, see `env.template`.
 
 - **No API keys needed:** calculator, wikipedia, filesystem, git, fetch, arxiv, weather, etc.
 - **API keys required:** GitHub, Google Maps, Slack, Notion, Airtable, Twelve Data, and others
